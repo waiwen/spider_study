@@ -55,7 +55,7 @@ if __name__ == '__main__':
    print('词频统计 ： ',c_d)
 
    f_path='E:\downloads\hye4gjm.ttf'  #字体的路径
-   print(path.join(d,'coco.jpg'))
+   print(path.join(d,'coco.jpg'))    #这里是你要做词云的图片
    coco_color = np.array(Image.open(path.join(d,'guitar.jpg')))
    wc = WordCloud(font_path=f_path,background_color='white',max_words=2000,mask=coco_color,max_font_size=80)
 
