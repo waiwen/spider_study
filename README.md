@@ -6,13 +6,13 @@
 尽量将详细的注释撰写在代码中，增强可读性。
 
 
-###algorithm
+###algorithm  
    记录一些常用的算法
 
-###coco_movie
+###coco_movie        
    是电影《寻梦环游记》的影评爬取和词云制作
 
-###taobao_spider
+###taobao_spider        
    关于淘宝的爬虫，商品类目，商品评论等等
 
 
