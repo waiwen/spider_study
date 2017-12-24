@@ -12,7 +12,7 @@ client =  MongoClient('mongodb://xxxxxxxxxxxxxxxxx') #这里是你的Mongodb链�
 movie = client.movie
 comments = movie.coco_comm
 
-cookies_douban="ll=\"108231\"; bid=r-bI1Vt9RPo; ct=y; ps=y; OUTFOX_SEARCH_USER_ID_NCOO=528656800.4120224; __yadk_uid=iuzdV23AcYIoIPrtXt81CnoK3tlxvobv; dbcl2=\"114209081:S72c66T/A/0\"; ap=1; _vwo_uuid_v2=F26B9FA21B10CD82C4A4752B4A42864F|658f39908828d3dcf57618ec9fc2c63b; push_noty_num=0; push_doumail_num=0; __utmv=30149280.11420; ck=heTK; __utmc=30149280; _pk_ref.100001.8cb4=%5B%22%22%2C%22%22%2C1513484217%2C%22https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DsyMTHbtlOF9RXbNUNE5sgUOuv9hcwjCuS0ca6ej6_ui%26wd%3D%26eqid%3Db425af30000132b3000000065a35efaf%22%5D; _pk_ses.100001.8cb4=*; __utma=30149280.1639511408.1512613247.1513476620.1513484218.12; __utmz=30149280.1513484218.12.9.utmcsr=baidu|utmccn=(organic)|utmcmd=organic; __utmt=1; _pk_id.100001.8cb4=eb4b186427b54ef1.1512644275.11.1513484227.1513476619.; __utmb=30149280.6.9.1513484227200"     #这是你的豆瓣cookie
+cookies_douban="你的豆瓣cookie"     #这是你的豆瓣cookie
 
 asolute_url ='https://movie.douban.com/subject/20495023/comments'
 
