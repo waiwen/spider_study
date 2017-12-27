@@ -4,8 +4,7 @@
 #email:iwaiwen@163.com
 #time: 2017/12/18 19:29
 import random
-
-
+import pandas
 """
 记录八大算法
 
@@ -102,13 +101,6 @@ def select_simple(l):
 """
 
 
-
-
-    
-
-
-
-
 if __name__ == '__main__':
     # print(quick(random_nums))
     # print(select_simple(random_nums))
@@ -118,14 +110,5 @@ if __name__ == '__main__':
     l = [0,1,2,3,4]
     for i in range(0,len(l)-1):
         print (l[i])
-
-
-
-
-
-
-
-
-
 
 
