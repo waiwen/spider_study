@@ -46,7 +46,7 @@ if __name__ == '__main__':
             result = pd.concat([result,l_df],ignore_index=True)
         except Exception as e:
             print(e)
-            continue
+
 
     result.to_csv('E:\\taobao_rate.csv',encoding="utf_8_sig")     #utf-8编码输出到csv文件，否则会乱码
 

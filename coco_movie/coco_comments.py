@@ -8,6 +8,7 @@ import requests
 import time
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
+
 client =  MongoClient('mongodb://xxxxxxxxxxxxxxxxx') #这里是你的Mongodb链接
 movie = client.movie
 comments = movie.coco_comm
@@ -73,7 +74,6 @@ def start(s_url):
     else:
         print('爬取结束。。。。')
         return
-
 
 if __name__=='__main__':
     start(start_url)
