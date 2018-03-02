@@ -19,7 +19,7 @@
 ### 5、uitl
    存储一些爬虫常用的工具，例如user_agent库
    
-### 6、
+### 6、tosrape_book
    #### 2018/02/28 更新 添加scrapy爬虫工程，toscrape为爬虫练习网站
    入门爬取1000本书籍信息，考察 **书本链接的提取和进一步爬取，下一页链接的提取和循环爬取**，
    不考虑爬虫速度，ip等带来的封禁
@@ -30,5 +30,6 @@
    分别使用命令‘scrapy crawl books’ 运行，往redis中添加“books:start_urls”字段的url，各服务器爬虫陆续启动
    添加scrapy-redis的itempipeline处理次序在最后，数据将会自动存储到redis数据库中
     
-### 7、 2018/03/02 更新 添加scrapy京东书籍价格和名称爬取工程
-   关键词“python”的图书搜索爬取，使用splash解决动态页面的爬取。
+### 7、jingdong_book         
+   #### 2018/03/02 更新 添加scrapy京东书籍价格和名称爬取工程
+   关键词“python”的京东图书搜索爬取，使用splash解决动态页面的爬取。
