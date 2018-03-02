@@ -21,6 +21,15 @@ NEWSPIDER_MODULE = 'toscrape_book.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+REDIS_URL = 'redis://116.196.90.23:6379'
+
+SCHEDULER='scrapy_redis.scheduler.Scheduler'
+
+DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
+
+
+SCHEDULER_PERSIST = True
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -65,6 +74,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
+    'scrapy_redis.pipelines.RedisPipeline': 301,
    'toscrape_book.pipelines.ToscrapeBookPipeline': 300,
 }
 

@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy.linkextractors import LinkExtractor
-
+from scrapy_redis.spiders import RedisSpider
 from toscrape_book.items import BookItem
 
-class BooksSpider(scrapy.Spider):
+class BooksSpider(RedisSpider):
     name = "books"
     allowed_domains = ["books.toscrape.com"]
-    start_urls = ['http://books.toscrape.com/']
+
+    # 2、将start_urls注释掉
+    # start_urls = ['http://books.toscrape.com/']
 
      #书籍列表页面的解释数据
     def parse(self, response):
